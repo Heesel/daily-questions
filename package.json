@@ -1,19 +1,27 @@
 {
-	"name": "daily-questions",
-	"version": "1.0.0",
-	"description": "A bot that is good for daily questions.",
-	"type": "module",
-	"license": "MIT",
-	"main": "./src/index.ts",
-	"scripts": {
-		"dev": "ts-node --esm src/index.ts"
-	},
-	"dependencies": {
-		"discord.js": "^14.12.1",
-		"mongodb": "5.7"
-	},
-	"devDependencies": {
-		"ts-node": "^10.9.1",
-		"typescript": "^5.1.6"
-	}
+  "name": "discordjs-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx node-ts src/index.ts",
+    "dev": "npx ts-node-dev src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.5.0",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "tslib": "^2.6.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "discord.js": "^14.12.1",
+    "dotenv": "^16.3.1",
+    "moment": "^2.29.4",
+    "moment-timezone": "^0.5.43",
+    "mongodb": "5.7"
+  }
 }
