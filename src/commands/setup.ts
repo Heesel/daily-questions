@@ -5,7 +5,6 @@ import mongodbOperations from '../utils/mongodbOperations';
 import { questionHandler } from '../handler/questionHandler';
 import { Server } from '../types/server';
 // @ts-ignore
-import * as schedule from 'node-schedule';
 import * as moment from 'moment-timezone';
 
 const setup = {
@@ -62,7 +61,7 @@ const setup = {
 					message = 'Setup completion was unsuccessful :neutral_face:';
 				} else {
 					//#FIXME: Cancel current job for the specific server
-					await schedule.gracefulShutdown();
+					
 					await questionHandler(interaction.guildId, interaction.client);
 					message = 'Setup succesfully updated :white_check_mark:';
 				}
